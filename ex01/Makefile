@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: omakran <omakran@student.1337.ma>          +#+  +:+       +#+         #
+#    By: omakran <omakran@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/07 17:24:24 by omakran           #+#    #+#              #
-#    Updated: 2024/05/07 17:24:32 by omakran          ###   ########.fr        #
+#    Updated: 2024/05/08 22:11:39 by omakran          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ all: $(EXEC)
 $(EXEC):	$(OBJS)
 	$(CC) $(CPPFLAGS) $(OBJS) -o $(EXEC)
 
-%.o:	%.cpp
+%.o:	%.cpp iter.hpp
 	$(CC) $(CPPFLAGS) -c $< -o $@
 
 clean:
