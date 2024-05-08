@@ -6,7 +6,7 @@
 #    By: omakran <omakran@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/07 20:42:08 by omakran           #+#    #+#              #
-#    Updated: 2024/05/07 20:53:56 by omakran          ###   ########.fr        #
+#    Updated: 2024/05/08 22:02:32 by omakran          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ all: $(EXEC)
 $(EXEC):	$(OBJS)
 	$(CC) $(CPPFLAGS) $(OBJS) -o $(EXEC)
 
-%.o:	%.cpp
+%.o:	%.cpp Array.hpp
 	$(CC) $(CPPFLAGS) -c $< -o $@
 
 clean:
